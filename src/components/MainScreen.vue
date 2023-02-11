@@ -4,7 +4,6 @@
         <PartyButton v-for="party in parties" :key="party.id" :title="party.title" :partyActive="party.active"
             @click="handleParties(party)"></PartyButton>
     </div>
-    <p v-for="party in $store.state.selectedArray" :key="party"> {{ party }}</p>
     <button><router-link to="/result">Weiter</router-link></button>
 </template>
 
