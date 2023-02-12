@@ -1,10 +1,10 @@
 <template>
-    <h1>Main</h1>
+    <h1>Wähle die Parteien aus!</h1>
     <div class="d-flex flex-column align-items-center gap-2">
         <PartyButton v-for="party in parties" :key="party.id" :title="party.title" :partyActive="party.active"
             @click="handleParties(party)"></PartyButton>
     </div>
-    <button><router-link to="/result">Weiter</router-link></button>
+    <div class="p-5"><router-link to="/result" class="btn btn-primary">Zum Ergebnis</router-link></div>
 </template>
 
 <script>

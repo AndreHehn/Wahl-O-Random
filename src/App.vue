@@ -1,7 +1,7 @@
 <template>
-  <div class="card">
-<router-view></router-view>
-</div>
+  <div class="card maincard">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -17,9 +17,20 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maincard {
+  width: 1024px;
+  max-width: 80%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>

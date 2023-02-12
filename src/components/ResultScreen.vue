@@ -1,8 +1,8 @@
 <template>
-  <h1>Result</h1>
+  <h1>Der Zufall hat entschieden:</h1>
 
   <p>{{ result }}</p>
-  <button><router-link to="/">Weiter</router-link></button>
+  <div class="p-5"><router-link to="/" class="btn btn-primary">Neustart</router-link></div>
 </template>
 
 <script>
